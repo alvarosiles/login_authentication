@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%230a0a0a%27/%3E%3Cpath d=%27M16 25s7-3.5 7-8.75V10l-7-2.6L9 10v6.25C9 21.5 16 25 16 25z%27 fill=%27none%27 stroke=%27%23fff%27 stroke-width=%271.8%27 stroke-linejoin=%27round%27/%3E%3Cpath d=%27m13 16 2 2 4-4%27 fill=%27none%27 stroke=%27%23fff%27 stroke-width=%271.8%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E" />
+    <title>Sign in</title>
+    <script>
+      // Apply the saved/OS theme before first paint to avoid a light flash in dark mode.
+      (function () {
+        var theme = null;
+        try { theme = localStorage.getItem("theme"); } catch (e) {}
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/login_authentication/assets/index-DySSkSY4.js"></script>
+    <link rel="stylesheet" crossorigin href="/login_authentication/assets/index-CsKHpgYG.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
